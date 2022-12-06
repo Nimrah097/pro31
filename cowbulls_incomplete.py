@@ -16,7 +16,7 @@ print("The game ends when you get 4 bulls!")
 print("Type exit at any prompt to exit.")
 
 while playing:
-    user_guess = raw_input("Give me your best guess!")
+    user_guess = input("Give me your best guess!")
     if user_guess == "exit":
         break
     cowbullcount = compare_numbers(number,user_guess)
@@ -30,3 +30,5 @@ while playing:
         break #redundant exit
     else:
         print("Your guess isn't quite right, try again.")
+
+
